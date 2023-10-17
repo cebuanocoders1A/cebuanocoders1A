@@ -1,21 +1,31 @@
-/*this program is written by:Joshua Miguel G. Jamisola
-Date:10/17/23
-*/
-
 #include<stdio.h>
+
 int main()
 {
-    //local declarations
-    int fib1;
-    int fib2;
-    int fib3;
+    short int number;
+    short int first;
+    short int second;
+    short int third;
+    short int fourth;
+    short int last;
+
+
+    printf("Enter value: ");
+    scanf("%hd", &number);
 
     //process
-    fib1 = 13 + 21;
-    fib2 = fib1 + 21;
-    fib3 = fib1 + fib2;
+    first = number / 10000;
+    second = number / 1000 % 10;
+    third = number / 100 % 10;
+    fourth = number / 10 % 10;
+    last = number % 10;
 
-    printf("0, 1, 1, 2, 3, 5, 8, 13, 21,%d %d %d", fib1, fib2, fib3);
-    
+    //output statements
+    printf("%hd\t%hd\t%hd\t%hd\t%hd\n",first, second, third, fourth, last);
+    printf("%hd\t%hd\t%hd\t%hd\n", second, third, fourth, last);
+    printf("%hd\t%hd\t%hd\t%hd\t%hd\n", third, fourth, last);
+    printf("%hd\t%hd\t%hd\n", fourth, last);
+    printf("%hd\n", last);
+
     return 0;
 }
