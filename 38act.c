@@ -24,7 +24,7 @@ int main()
     printf("%hd\t%hd\t%hd\t%hd\t%hd\n",first, second, third, fourth, last);
     printf("%hd\t%hd\t%hd\t%hd\n", second, third, fourth, last);
     printf("%hd\t%hd\t%hd\t%hd\t%hd\n", third, fourth, last);
-    printf("%hd\t%hd\t%hd\n", fourth, last);
+    printf("%hd\t%hd\n", fourth, last);
     printf("%hd\n", last);
 
     return 0;
