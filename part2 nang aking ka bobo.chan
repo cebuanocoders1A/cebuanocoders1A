@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    //local declarations
+    float fahrenheit, celsius;
+
+    //inputs
+    printf("Enter a temperature in fahrenheit:");
+    scanf("%f", &fahrenheit);
+
+    //process
+    celsius = (float) 100 / 180 * (fahrenheit - 32);
+
+    //output
+    printf("The fahrenheit is %.1f\n", fahrenheit);
+    printf("fahrenheit is %.1f\n", fahrenheit);
+    printf("the celsius is %.1f", celsius);
+
+    return 0;
+
+}
