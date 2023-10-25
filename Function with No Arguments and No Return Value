@@ -1,0 +1,20 @@
+/*This program is an example of a Function with No Arguments and No Return Value
+Written by: Joshua Miguel G. Jamisola
+10/26/2023*/
+
+void product ()
+{
+    int x, y;
+    printf("Enter x and y\n");
+    scanf("%d %d", &x, &y);
+    printf("Product of %d and %d is: %d", x, y, x * y);
+
+}
+
+int main()
+{
+    product();
+
+    return 0;
+
+}
